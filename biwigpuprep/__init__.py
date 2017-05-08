@@ -2,7 +2,7 @@ import os
 import subprocess
 import tensorflow as tf
 
-def StartGPUSession(verbose=False):
+def GPUSession(verbose=False):
     # run this beforehand
     # check if SGE_GPU variable is set
     if os.environ.get('SGE_GPU') is None:
